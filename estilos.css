@@ -1,27 +1,101 @@
 /*Fuentes*/
 @font-face {
-    font-family: "Google Sans";
-    src: url("./fonts/GoogleSans-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: bold;
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-MediumItalic.eot');
+    src: local('Google Sans Medium Italic'), local('GoogleSans-MediumItalic'),
+        url('fuentes/GoogleSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-MediumItalic.woff2') format('woff2'),
+        url('fuentes/GoogleSans-MediumItalic.woff') format('woff'),
+        url('fuentes/GoogleSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
 }
 
+@font-face {
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-Bold.eot');
+    src: local('Google Sans Bold'), local('GoogleSans-Bold'),
+        url('fuentes/GoogleSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-Bold.woff2') format('woff2'),
+        url('fuentes/GoogleSans-Bold.woff') format('woff'),
+        url('fuentes/GoogleSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @font-face {
-    font-family: "Google Sans";
-    src: url("./fonts/GoogleSans-Medium.woff") format("woff");
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-Italic.eot');
+    src: local('Google Sans Italic'), local('GoogleSans-Italic'),
+        url('fuentes/GoogleSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-Italic.woff2') format('woff2'),
+        url('fuentes/GoogleSans-Italic.woff') format('woff'),
+        url('fuentes/GoogleSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-Medium.eot');
+    src: local('Google Sans Medium'), local('GoogleSans-Medium'),
+        url('fuentes/GoogleSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-Medium.woff2') format('woff2'),
+        url('fuentes/GoogleSans-Medium.woff') format('woff'),
+        url('fuentes/GoogleSans-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Google Sans";
-    src: url("./fonts/GoogleSans-Regular.woff") format("woff");
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-Regular.eot');
+    src: local('Google Sans Regular'), local('GoogleSans-Regular'),
+        url('fuentes/GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-Regular.woff2') format('woff2'),
+        url('fuentes/GoogleSans-Regular.woff') format('woff'),
+        url('fuentes/GoogleSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Google Sans';
+    src: url('fuentes/GoogleSans-BoldItalic.eot');
+    src: local('Google Sans Bold Italic'), local('GoogleSans-BoldItalic'),
+        url('fuentes/GoogleSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/GoogleSans-BoldItalic.woff2') format('woff2'),
+        url('fuentes/GoogleSans-BoldItalic.woff') format('woff'),
+        url('fuentes/GoogleSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
 /*Estilos*/
 *{
-    font-family: "Google Sans";
+    font-family: 'Google Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+	display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    text-align: center; 
+    font-weight: bold;
+    font-size: 50px;
 }
