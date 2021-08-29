@@ -7,7 +7,7 @@
     <title>Formulario de Contacto</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<nav style="background-color: #459;">
+<nav>
     <img src="img/logo.svg" alt="Logo" style="height: 50px;">
     <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -16,14 +16,36 @@
     </ul>
 </nav>
 <body>
-    
+    <div class="form-container">
+		<h1>Contactanos</h3>
+	
+		<form>
+			<div>
+				<label for="Name">Tu nombre</label>
+				<input type="text" id="Name" name="Name" required>
+			</div>
+
+			<div>
+				<label for="Email">Tu correo electronico</label>
+				<input type="email" id="Email" name="Email" required>
+			</div>
+			
+			<div>
+				<label for="Message">Tu Mensaje</label>
+				<textarea id="Message" name="Message" rows="6" required></textarea>
+			</div>
+
+			<button type="submit">Enviar Mensaje</button>
+		</form>
+	</div>
+    <footer id="contact-footer">
+        <span>RetroGames <br> Taller 2 Programacion</span>
+        <ul id="pie">
+            <li>Integrantes:</li>
+            <li>Gabriel Reyes</li>
+            <li>Jostein Caceres</li>
+        </ul>
+    </footer>
 </body>
-<footer style="background-color: #444;">
-    <span>RetroGames <br> Taller 2 Programacion</span>
-    <ul id="pie">
-        <li>Integrantes:</li>
-        <li>Gabriel Reyes</li>
-        <li>Jostein Caceres</li>
-    </ul>
-</footer>
+
 </html>
