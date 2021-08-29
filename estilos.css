@@ -78,6 +78,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	color: turquoise;
 }
 
 ul{
@@ -87,6 +88,7 @@ ul{
 nav{
     color: white;
 	display: flex;
+	align-items: center;
     justify-content: space-between;
     padding: 5px 20px;
     border-radius: 0 0 15px 15px;
@@ -94,6 +96,11 @@ nav{
     width: 100%;
     top: 0;
     background: linear-gradient(160deg, #092754 , #0b1833 80%, #401340 );
+	z-index: 1;
+}
+
+#logo{
+	height: 50px;
 }
 
 nav ul{
@@ -116,11 +123,12 @@ body{
 }
 .container{
     color: rgb(98, 151, 151);
-    margin-top: 20px;
-    height: 100vh;
+    margin: 20px auto;
+    width: 97%;
 }
 
 .content-container{
+    padding: 30px;
     display: flex;
 }
 
@@ -138,6 +146,9 @@ body{
 }
 main{
     width: 60%;
+}
+.linkRef{
+    text-decoration: underline;
 }
 
 h1{
@@ -163,4 +174,59 @@ footer ul{
 
 footer li:first-child{
     font-size: 20px;
+}
+
+/*ITEMS*/
+
+.items-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.item{
+	min-width: 300px;
+	max-width: 300px;
+	height: 300px;
+	background-color: transparent;
+	margin: 20px;
+	border-radius: 10%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.item-img{
+	height: 100%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: filter .5s;
+}
+
+.item-span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: opacity .5s;
+	color: turquoise;
+	font-size: 20px;
+	user-select: none;
+	pointer-events: none;
+    text-align: center;
+}
+
+.item-img:hover{
+	filter: brightness(.2);
+}
+
+.item-img:hover + .item-span{
+	opacity: 1 !important;
 }
