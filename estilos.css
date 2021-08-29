@@ -85,6 +85,7 @@ ul{
 }
 
 nav{
+    color: white;
 	display: flex;
     justify-content: space-between;
     padding: 5px 20px;
@@ -92,6 +93,7 @@ nav{
     position: sticky;
     width: 100%;
     top: 0;
+    background: linear-gradient(160deg, #092754 , #0b1833 80%, #401340 );
 }
 
 nav ul{
@@ -130,7 +132,10 @@ body{
 #side-content{
     width: 40%;
 }
-
+#img-consol{
+    display: block;
+    margin: auto;
+}
 main{
     width: 60%;
 }
