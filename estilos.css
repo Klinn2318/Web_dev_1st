@@ -254,7 +254,7 @@ footer li:first-child{
 form{
 	display: flex;
 	flex-direction: column;
-	width: 500px;
+    width: 700px;
 	font-size: 18px;
 }
 
@@ -300,4 +300,23 @@ form div{
 #contact-footer{
     position: absolute;
     bottom:0;
+}
+
+/* Grafica */
+#divg{
+    display: flex;
+    flex-direction: column;
+}
+#grafic{
+    margin-top: 10px;
+    position: relative;
+    width:100%;
+    height: auto !important;;
+    border: 2px solid #4a244d;
+	border-radius: 30px !important;
+}
+#divb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
