@@ -22,24 +22,22 @@
 <body>
 	<div class="form-container">
 		<h1>Graficadora</h3>
-	
 		<form>
 			<div>
-				<label>Data:</label>
+				<span id="info-span" style="display: block;">Ingresa los datos: (Primero el "Label", despues el "Dato" separado por ":")</span>
+
+				<label>Datos:</label>
+				<input type="text" id="datos-input" placeholder="Ejemplo.  Label1:10, Label2:5" required>
 			</div>
 
-			<div>
-				<label>Labels:</label>
-				<input type="email" id="Email" name="Email" required>
-			</div>
-			<div id="divb">
-				<button id="d1">Diagrama Barras</button>
-				<button id="d2">Diagrama Circular</button>
-				<button id="d3">Diagrama Linea</button>
+			<div id="btns-container">
+				<button id="diag-bar">Diagrama Barras</button>
+				<button id="diag-pie">Diagrama Circular</button>
+				<button id="diag-line">Diagrama Linea</button>
 			</div>
 
-			<div id="divg">
-				<label for="Message">Tu grafica:</label>
+			<div id="diag">
+				<label>Tu grafica:</label>
 				<canvas id="grafic"></canvas>
 			</div>
 
@@ -48,7 +46,7 @@
 	</div>
 	<footer>
 		<span>RetroGames <br> Taller 2 y 3 Programacion</span>
-		<ul id="pie">
+		<ul>
 			<li>Integrantes:</li>
 			<li>Gabriel Reyes</li>
 		</ul>
