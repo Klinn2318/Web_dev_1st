@@ -292,9 +292,16 @@ form button{
 form button:hover{
 	background-color: #4a244d;
 }
+#cont{
+    display: flex;
+    align-items: center;
+}
 
-form div{
+#cont div{
 	margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+   
 }
 
 #contact-footer{
@@ -320,3 +327,68 @@ form div{
     align-items: center;
     justify-content: space-between;
 }
+
+/* Calculadora */
+    #calc-container{
+    width: 400px;
+    margin-top: 40px;
+    padding: 10px;
+}
+    #calculator{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+   
+   #output-container{
+       display: flex;
+       align-items: center;
+        height: 50px;
+        width: 100%;
+        padding: 0 0 0 5px;
+        background: rgba(221, 221, 221, 0.685);
+        border: 4px solid #4a244d;
+        margin-bottom: 5px;
+        border-radius: 30px;
+   }
+
+   #output{
+       font-weight: bold;
+        color: #161b22;
+   }
+   
+   #buttons-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 50px);
+        gap: 5px;
+     }
+   
+   .botcal{
+        height:100%;
+        width:100%;
+        background: rgba(221, 221, 221, 0.685);
+        border: 4px solid #4a244d;
+        border-radius: 30px;
+        font-size: 20px;
+   }
+
+   #zero{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background: rgba(221, 221, 221, 0.685);
+        border: 4px solid #4a244d;
+        border-radius: 30px;
+        font-size: 20px;
+   }
+
+   #clear{
+       grid-column-start: 1;
+       grid-column-end: 5;
+       margin-top: 5px;
+       background: rgba(221, 221, 221, 0.685);
+       border: 4px solid #4a244d;
+       border-radius: 30px;
+       font-size: 20px;
+   }
+
